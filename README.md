@@ -1,7 +1,7 @@
 # Project Lab Part 3: The final test
 
 ## Overview
-In this part of the lab, you will be determining whether or not your auto-generated game from part 2 is actually solveable
+In this part of the lab, you will be determining whether your auto-generated game from part 2 is actually solvable.
 
 
 You will find the standard solutions to part 2 in the Project Lab 2 folder under Lab Assignments
@@ -20,7 +20,7 @@ Create a Stack class in Stack.java that implements a stack using a linked list. 
 ## Part 3: Implement a method UnlockRoomsWithKeys(Node lockedRooms, Key newKey, Stack roomsToExplore)
 Upon finding new key, we want to use it and see if any of our previously locked rooms are now unlocked. Rather than traverse through the treee to find them, we can use our handy stack and queues
 * For each room in lockedRoomKeys, check if newKey unlocks it
-* If the room is unlocked by that key, add it to the roomsToExplore Stack and remove it from your linked list
+* If the room is unlocked by newKey, add it to the roomsToExplore Stack using maybePushUnlockedRoom and remove it from your linked list
 
 ## If you do not reach this point by the end of the first day, you are behind and not on track to finish on the second day of lab. Please come to office hours
 
@@ -29,7 +29,7 @@ To check if a game is winnable, we need to check all rooms we can reach
 ### Part A: Rooms that are locked
 Create an LinkedList to hold the Rooms that you've seen but are locked. 
 
-### Part B: Rooms that are exploreable
+### Part B: Rooms that are explorable
 Create a Stack roomsToExplore and add room to it
 
 ### Part C: Put it all together
@@ -41,7 +41,7 @@ Create a Stack roomsToExplore and add room to it
     4) Lastly, let's check the keys we've found and see if they unlock any of our lockedRooms using the UnlockRoomsWithKeys method
 
 
-## Part 4: Implement Room generateWinnableRandomGame(int numkeys, int maxDepth)
+## Part 4: Implement Room generateWinnableRandomGame(int numKeys, int maxDepth)
 In this method, randomly generate TreeGames and test them with your isGameWinnable method until you find a game that can be won
 
 ## Part 5: Main.java
