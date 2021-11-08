@@ -18,14 +18,15 @@ Create a Stack class in Stack.java that implements a stack using a linked list. 
 4) Implement isEmpty() which will return if there are no more rooms to explore
 
 ## Part 3: In Main.java, Implement a method UnlockRoomsWithKeys(Node lockedRooms, Key newKey, Stack roomsToExplore) (~15 lines of code)
-Upon finding new key, we want to use it and see if any of our previously locked rooms are now unlocked. Rather than traverse through the treee to find them, we can use our handy stack and queues
+Upon finding new key, we want to use it and see if any of our previously locked rooms are now unlocked. Rather than traverse through the tree to find them, we can use our handy stack and queues
 * For each room in lockedRoomKeys, check if newKey unlocks it
 * If the room is unlocked by newKey, add it to the roomsToExplore Stack using maybePushUnlockedRoom and remove it from your linked list
 
-## If you do not reach this point by the end of the first day, you are behind and not on track to finish on the second day of lab. Please come to office hours
+## If you do not reach this point by the end of the first day, you are behind and not on track to finish on the second day of lab. Please come to office hours.
 
 ## Part 4: In Main.java Implement boolean IsGameWinnable(Room room)  (~20 lines of code)
-To check if a game is winnable, we need to check all rooms we can reach
+To check if a game is winnable, we need to check all rooms we can reach.
+
 ### Part A: Rooms that are locked
 Create an LinkedList to hold the Rooms that you've seen but are locked. 
 
